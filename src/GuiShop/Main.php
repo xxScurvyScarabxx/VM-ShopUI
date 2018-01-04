@@ -59,11 +59,11 @@ public $Blocks = [
 
   public $Ores = [
     "ICON" => ["Ores",266,0],
-    "Coal" => [263,0,100,50],
-    "Iron Ingot" => [265,0,200,100],
-    "Gold Ingot" => [266,0,300,150],
-    "Diamond" => [264,0,500,250],
-    "Lapis" => [351,4,500,250]
+    "Coal" => [263,0,100,10],
+    "Iron Ingot" => [265,0,200,10],
+    "Gold Ingot" => [266,0,300,10],
+    "Diamond" => [264,0,500,10],
+    "Lapis" => [351,4,500,20]
   ];
 
   public $Tools = [
