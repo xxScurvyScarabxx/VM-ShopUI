@@ -79,10 +79,10 @@ public $Blocks = [
 
   public $Armor = [
     "ICON" => ["Armor",311,0],
-    "Diamond Helmet" => [310,0,1000,500],
-    "Diamond Chestplate" => [311,0,2500,1250],
-    "Diamond Leggings" => [312,0,1500,750],
-    "Diamond Boots" => [313,0,1000,500]
+    "Diamond Helmet" => [310,0,1000,0],
+    "Diamond Chestplate" => [311,0,2500,0],
+    "Diamond Leggings" => [312,0,1500,0],
+    "Diamond Boots" => [313,0,1000,0]
   ];
 
   public $Farming = [
