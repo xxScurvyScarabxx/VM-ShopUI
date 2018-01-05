@@ -56,7 +56,18 @@ public $Blocks = [
     "Purpur Blocks" => [201,0,50,30],
     "Quartz Block" => [155,0,100,30],
     "Sea Lantern" => [169,0,100,30],
-    "Lapis Block" => [22,0,1000,50]
+    "Lapis Block" => [22,0,1000,50],
+    "White Wool" => [35,0,100,20],
+    "Stone Slab" => [44,0,100,20],
+    "Stone Stairs" => [67,0,100,20],
+    "Snow" => [80,0,500,50],
+    "Stone Bricks" => [98,0,500,50],
+    "White Stained Glass" => [160,0,500,50],
+    "Orange Stained Glass" => [160,1,1000,100],
+    "Magenta Stained Glass" => [160,2,1000,100],
+    "Light Blue Stained Glass" => [160,3,1000,100],
+    "Yellow Stained Glass" => [160,4,1000,100],
+    "Lime Stained Glass" => [160,5,1000,100]
   ];
 
   public $Ores = [
@@ -128,7 +139,8 @@ public $Blocks = [
     "Magenta Bed" => [355,2,200,20],
     "Light Blue Bed" => [355,3,200,20],
     "Yellow Bed" => [355,4,200,20],
-    "Lime Bed" => [355,5,200,20]
+    "Lime Bed" => [355,5,200,20],
+    "Anvil" => [145,0,500,50]
   ];
 
   public $Raiding = [
