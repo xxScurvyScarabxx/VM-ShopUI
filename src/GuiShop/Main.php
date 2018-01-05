@@ -48,8 +48,8 @@ public $Blocks = [
     "Planks" => [5,0,20,10],
     "Prismarine" => [168,0,30,20],
     "End Stone" => [121,0,30,20],
-    "Emerald Block" => [133,0,100,50],
-    "Diamond Block" => [57,0,101,51],
+    "Emerald Block" => [133,0,100,100],
+    "Diamond Block" => [57,0,101,100],
     "Glass" => [20,0,50,30],
     "Iron Block" => [42,0,50,30],
     "Gold Block" => [41,0,50,30],
@@ -60,9 +60,9 @@ public $Blocks = [
   public $Ores = [
     "ICON" => ["Ores",266,0],
     "Coal" => [263,0,100,10],
-    "Iron Ingot" => [265,0,200,10],
-    "Gold Ingot" => [266,0,300,10],
-    "Diamond" => [264,0,500,10],
+    "Iron Ingot" => [265,0,200,5],
+    "Gold Ingot" => [266,0,300,5],
+    "Diamond" => [264,0,500,5],
     "Lapis" => [351,4,500,20]
   ];
 
