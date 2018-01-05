@@ -54,7 +54,9 @@ public $Blocks = [
     "Iron Block" => [42,0,50,30],
     "Gold Block" => [41,0,50,30],
     "Purpur Blocks" => [201,0,50,30],
-    "Quartz Block" => [155,0,100,30]
+    "Quartz Block" => [155,0,100,30],
+    "Sea Lantern" => [169,0,100,30],
+    "Lapis Block" => [22,0,1000,50]
   ];
 
   public $Ores = [
@@ -119,6 +121,14 @@ public $Blocks = [
     "Elytra" => [444,0,1000,0],
     "Boats" => [333,0,1000,500],
     "Totem of Undying" => [450,0,1000,500]
+    "Brewing Stand" => [117,0,500,20],
+    "Carpet" => [171,0,100,5],
+    "White Bed" => [355,0,100,10],
+    "Orange Bed" => [355,1,200,20],
+    "Magenta Bed" => [355,2,200,20],
+    "Light Blue Bed" => [355,3,200,20],
+    "Yellow Bed" => [355,4,200,20],
+    "Lime Bed" => [355,5,200,20]
   ];
 
   public $Raiding = [
