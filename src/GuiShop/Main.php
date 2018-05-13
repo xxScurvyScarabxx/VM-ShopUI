@@ -29,107 +29,107 @@ class Main extends PluginBase implements Listener {
   */
 public $Blocks = [
     "ICON" => ["Blocks",2,0],
-    "Oak Wood" => [17,0,30,15],
-    "Birch Wood" => [17,2,30,15],
-    "Spruce Wood" => [17,1,30,15],
-    "Dark Oak Wood" => [162,1,30,15],
-	"Cobblestone" => [4,0,10,5],
-	"Obsidian" => [49,0,500,250],
-	"Bedrock" => [7,0,1500,500],
-	"Sand " => [12,0,15,7],
-    "Sandstone " => [24,0,15,7],
-	"Nether Rack" => [87,0,15,7],
-    "Glass" => [20,0,50,25],
-    "Glowstone" => [89,0,100,50],
-    "Sea Lantern" => [169,0,100,50],
-	"Grass" => [2,0,20,10],
-	"Dirt" => [3,0,10, 5],
-    "Stone" => [1,0,20,10],
-    "Planks" => [5,0,20,10],
-    "Prismarine" => [168,0,30,20],
-    "End Stone" => [121,0,30,20],
-    "Emerald Block" => [133,0,100,50],
-    "Diamond Block" => [57,0,101,51],
-    "Glass" => [20,0,50,30],
-    "Iron Block" => [42,0,50,30],
-    "Gold Block" => [41,0,50,30],
-    "Purpur Blocks" => [201,0,50,30],
-    "Quartz Block" => [155,0,100,30]
+    "Oak Wood" => [17,0,30,4],
+    "Birch Wood" => [17,2,30,3],
+    "Spruce Wood" => [17,1,30,4],
+    "Dark Oak Wood" => [162,1,30,3],
+	"Cobblestone" => [4,0,10,2],
+	"Obsidian" => [49,0,500,50],
+	"Bedrock" => [7,0,1500,50],
+	"Sand " => [12,0,15,2],
+    "Sandstone " => [24,0,15,3],
+	"Nether Rack" => [87,0,15,2],
+    "Glass" => [20,0,50,5],
+    "Glowstone" => [89,0,100,10],
+    "Sea Lantern" => [169,0,100,10],
+	"Grass" => [2,0,20,3],
+	"Dirt" => [3,0,10,2],
+    "Stone" => [1,0,20,3],
+    "Planks" => [5,0,20,3],
+    "Prismarine" => [168,0,30,3],
+    "End Stone" => [121,0,30,3],
+    "Emerald Block" => [133,0,100,10],
+    "Diamond Block" => [57,0,100,10],
+    "Glass" => [20,0,50,9],
+    "Iron Block" => [42,0,50,9],
+    "Gold Block" => [41,0,50,9],
+    "Purpur Blocks" => [201,0,50,9],
+    "Quartz Block" => [155,0,100,10]
   ];
 
   public $Ores = [
     "ICON" => ["Ores",266,0],
-    "Coal" => [263,0,100,50],
-    "Iron Ingot" => [265,0,200,100],
-    "Gold Ingot" => [266,0,300,150],
-    "Diamond" => [264,0,500,250],
-    "Lapis" => [351,4,500,250]
+    "Coal" => [263,0,100,30],
+    "Iron Ingot" => [265,0,200,20],
+    "Gold Ingot" => [266,0,300,30],
+    "Diamond" => [264,0,500,30],
+    "Lapis" => [351,4,500,50]
   ];
 
   public $Tools = [
     "ICON" => ["Tools",278,0],
-    "Diamond Pickaxe" => [278,0,500,250],
-    "Diamond Shovel" => [277,0,500,250],
-    "Diamond Axe" => [279,0,500,250],
-    "Diamond Hoe" => [293,0,500,250],
-    "Diamond Sword" => [276,0,750,375],
-    "Bow" => [261,0,400,200],
-    "Arrow" => [262,0,25,5]
+    "Diamond Pickaxe" => [278,0,500,4],
+    "Diamond Shovel" => [277,0,500,4],
+    "Diamond Axe" => [279,0,500,4],
+    "Diamond Hoe" => [293,0,500,4],
+    "Diamond Sword" => [276,0,750,4],
+    "Bow" => [261,0,400,10],
+    "Arrow" => [262,0,25,3]
   ];
 
   public $Armor = [
     "ICON" => ["Armor",311,0],
-    "Diamond Helmet" => [310,0,1000,500],
-    "Diamond Chestplate" => [311,0,2500,1250],
-    "Diamond Leggings" => [312,0,1500,750],
-    "Diamond Boots" => [313,0,1000,500]
+    "Diamond Helmet" => [310,0,1000,0],
+    "Diamond Chestplate" => [311,0,2500,0],
+    "Diamond Leggings" => [312,0,1500,0],
+    "Diamond Boots" => [313,0,1000,0]
   ];
 
   public $Farming = [
     "ICON" => ["Farming",293,0],
-    "Pumpkin" => [86,0,50,25],
-    "Melon" => [360,13,50,25],
-    "Carrot" => [391,0,80,40],
-    "Potato" => [392,0,80,40],
-    "Sugarcane" => [338,0,80,40],
-    "Wheat" => [296,6,80,40],
-    "Pumpkin Seed" => [361,0,20,10],
-    "Melon Seed" => [362,0,20,10],
-    "Seed" => [295,0,20,10]
+    "Pumpkin" => [86,0,50,15],
+    "Melon" => [360,13,50,15],
+    "Carrot" => [391,0,80,10],
+    "Potato" => [392,0,80,10],
+    "Sugarcane" => [338,0,80,10],
+    "Wheat" => [296,6,80,10],
+    "Pumpkin Seed" => [361,0,20,3],
+    "Melon Seed" => [362,0,20,3],
+    "Seed" => [295,0,20,3]
   ];
 
   public $Food = [
     "ICON" => ["Food",364,0],
-	"Cooked Chicken" => [366,0,10,5],
-    "Steak" => [364,0,10,5],
-    "Golden Apple" => [322,0,500,100],
-    "Enchanted Golden Apple" => [466,0,1000,100]
+	"Cooked Chicken" => [366,0,10,3],
+    "Steak" => [364,0,10,3]
   ];
 
   public $Miscellaneous = [
     "ICON" => ["Miscellaneous",368,0],
 	"PVP Elixir" => [373,101,35000,500],
 	"Raiding Elixir" => [373,100,10000,500],
-	"Furnace" => [61,0,20,10],
-    "Crafting Table" => [58,0,20,10],
-	"Ender Chest " => [130,0,1000,500],
-    "Enderpearl" => [368,0,1000,500],
-    "Bone" => [352,0,50,25],
+	"Furnace" => [61,0,20,5],
+    "Crafting Table" => [58,0,20,5],
+	"Ender Chest " => [130,0,1000,50],
+    "Enderpearl" => [368,0,1000,50],
+    "Bone" => [352,0,50,10],
     "Book & Quill" => [386,0,100,0],
-    "Elytra" => [444,0,1000,500],
-    "Boats" => [333,0,1000,500],
-    "Totem of Undying" => [450,0,1000,500]
+    "Elytra" => [444,0,1000,50],
+    "Boats" => [333,0,1000,50],
+    "Totem of Undying" => [450,0,1000,50],
+    "Golden Apple" => [322,0,500,10],
+    "Enchanted Golden Apple" => [466,0,1000,50]
   ];
 
   public $Raiding = [
     "ICON" => ["Raiding",46,0],
-    "Flint & Steel" => [259,0,100,50],
+    "Flint & Steel" => [259,0,100,10],
     "Torch" => [50,0,5,2],
-	"Packed Ice " => [174,0,500,250],
-    "Water" => [9,0,50,10],
-    "Lava" => [10,0,50,10],
-    "Redstone" => [331,0,50,25],
-    "Chest" => [54,0,100,50],
+	"Packed Ice " => [174,0,500,40],
+    "Water" => [9,0,50,5],
+    "Lava" => [10,0,50,5],
+    "Redstone" => [331,0,50,5],
+    "Chest" => [54,0,100,10],
     "TNT" => [46,0,10000,500]
   ];
 	
@@ -142,36 +142,36 @@ public $Blocks = [
     "Husk" => [383,47,50000,1000],
     "Zombie_Pigman" => [383,36,50000,1000],
     "Creeper" => [383,33,50000,1000],
-    "Mob Spawner" => [52,0,55000,2000]
+    "Mob Spawner" => [52,0,55000,1500]
   ];
 
   public $Potions = [
     "ICON" => ["Potions",373,0],
-    "Strength" => [373,33,1000,100],
-    "Regeneration" => [373,28,1000,100],
-    "Speed" => [373,16,1000,500],
-    "Fire Resistance" => [373,13,1000,100],
-    "Poison (SPLASH)" => [438,27,1000,100],
-    "Weakness (SPLASH)" => [438,35,1000,100],
-    "Slowness (SPLASH)" => [438,17,1000,100]
+    "Strength" => [373,33,1000,50],
+    "Regeneration" => [373,28,1000,50],
+    "Speed" => [373,16,1000,50],
+    "Fire Resistance" => [373,13,1000,50],
+    "Poison (SPLASH)" => [438,27,1000,50],
+    "Weakness (SPLASH)" => [438,35,1000,50],
+    "Slowness (SPLASH)" => [438,17,1000,50]
   ];
 
   public $Skulls = [
     "ICON" => ["Skulls",397,0],
-    "Zombie Skull" => [397,2,500,50],
-    "Wither Skull" => [397,1,500,50],
+    "Zombie Skull" => [397,2,500,10],
+    "Wither Skull" => [397,1,500,10],
     "Skin Head" => [397,3,50,10],
-    "Creeper Skull" => [397,4,500,50],
-    "Dragon Skull" => [397,5,1000,60],
-    "Skeleton Skull" => [397,0,500,50]
+    "Creeper Skull" => [397,4,500,10],
+    "Dragon Skull" => [397,5,1000,50],
+    "Skeleton Skull" => [397,0,500,10]
   ];
 	
   public $MobDrop = [
     "ICON" => ["MobDrop",369,0],
-    "Blaze Rod" => [369,0,500,50],
+    "Blaze Rod" => [369,0,500,10],
     "Gold Nuggets" => [371,0,500,10],
-    "Rotten Flesh" => [367,0,500,50],
-    "GunPowder" => [289,0,500,50]
+    "Rotten Flesh" => [367,0,500,10],
+    "GunPowder" => [289,0,500,10]
   ];
 	
   public function onEnable(){
