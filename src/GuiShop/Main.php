@@ -27,6 +27,7 @@ class Main extends PluginBase implements Listener {
   /*
   "Item name" => [item_id, item_damage, buy_price, sell_price]
   */
+
 public $Blocks = [
     "ICON" => ["Blocks",2,0],
     "Oak Wood" => [17,0,30,4],
@@ -56,7 +57,7 @@ public $Blocks = [
     "Purpur Blocks" => [201,0,50,9],
     "Quartz Block" => [155,0,100,10]
   ];
-
+	
   public $Ores = [
     "ICON" => ["Ores",266,0],
     "Coal" => [263,0,100,30],
@@ -65,7 +66,7 @@ public $Blocks = [
     "Diamond" => [264,0,500,30],
     "Lapis" => [351,4,500,50]
   ];
-
+	
   public $Tools = [
     "ICON" => ["Tools",278,0],
     "Diamond Pickaxe" => [278,0,500,4],
@@ -76,7 +77,7 @@ public $Blocks = [
     "Bow" => [261,0,400,10],
     "Arrow" => [262,0,25,3]
   ];
-
+	
   public $Armor = [
     "ICON" => ["Armor",311,0],
     "Diamond Helmet" => [310,0,1000,0],
@@ -84,7 +85,7 @@ public $Blocks = [
     "Diamond Leggings" => [312,0,1500,0],
     "Diamond Boots" => [313,0,1000,0]
   ];
-
+	
   public $Farming = [
     "ICON" => ["Farming",293,0],
     "Pumpkin" => [86,0,50,15],
@@ -97,13 +98,13 @@ public $Blocks = [
     "Melon Seed" => [362,0,20,3],
     "Seed" => [295,0,20,3]
   ];
-
+	
   public $Food = [
     "ICON" => ["Food",364,0],
 	"Cooked Chicken" => [366,0,10,3],
     "Steak" => [364,0,10,3]
   ];
-
+	
   public $Miscellaneous = [
     "ICON" => ["Miscellaneous",368,0],
 	"PVP Elixir" => [373,101,35000,500],
@@ -120,7 +121,7 @@ public $Blocks = [
     "Golden Apple" => [322,0,500,10],
     "Enchanted Golden Apple" => [466,0,1000,50]
   ];
-
+	
   public $Raiding = [
     "ICON" => ["Raiding",46,0],
     "Flint & Steel" => [259,0,100,10],
@@ -144,7 +145,7 @@ public $Blocks = [
     "Creeper" => [383,33,50000,1000],
     "Mob Spawner" => [52,0,55000,1500]
   ];
-
+	
   public $Potions = [
     "ICON" => ["Potions",373,0],
     "Strength" => [373,33,1000,50],
@@ -155,7 +156,7 @@ public $Blocks = [
     "Weakness (SPLASH)" => [438,35,1000,50],
     "Slowness (SPLASH)" => [438,17,1000,50]
   ];
-
+	
   public $Skulls = [
     "ICON" => ["Skulls",397,0],
     "Zombie Skull" => [397,2,500,10],
