@@ -1,7 +1,5 @@
 <?php
-
 namespace GuiShop;
-
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
@@ -16,18 +14,14 @@ use GuiShop\Modals\elements\{Dropdown, Input, Button, Label, Slider, StepSlider,
 use GuiShop\Modals\network\{GuiDataPickItemPacket, ModalFormRequestPacket, ModalFormResponsePacket, ServerSettingsRequestPacket, ServerSettingsResponsePacket};
 use GuiShop\Modals\windows\{CustomForm, ModalWindow, SimpleForm};
 use pocketmine\command\{Command, CommandSender, ConsoleCommandSender, CommandExecutor};
-
 use onebone\economyapi\EconomyAPI;
-
 class Main extends PluginBase implements Listener {
   public $shop;
   public $item;
-
   //documentation for setting up the items
   /*
   "Item name" => [item_id, item_damage, buy_price, sell_price]
   */
-
 public $Blocks = [
     "ICON" => ["Blocks",2,0],
     "Oak Wood" => [17,0,30,4],
@@ -49,11 +43,11 @@ public $Blocks = [
     "Planks" => [5,0,20,3],
     "Prismarine" => [168,0,30,3],
     "End Stone" => [121,0,30,3],
-    "Emerald Block" => [133,0,100,20],
-    "Diamond Block" => [57,0,100,20],
+    "Emerald Block" => [133,0,100,10],
+    "Diamond Block" => [57,0,100,10],
     "Glass" => [20,0,50,9],
-    "Iron Block" => [42,0,50,20],
-    "Gold Block" => [41,0,50,20],
+    "Iron Block" => [42,0,50,9],
+    "Gold Block" => [41,0,50,9],
     "Purpur Blocks" => [201,0,50,9],
     "Quartz Block" => [155,0,100,10]
   ];
@@ -61,10 +55,10 @@ public $Blocks = [
   public $Ores = [
     "ICON" => ["Ores",266,0],
     "Coal" => [263,0,100,30],
-    "Iron Ingot" => [265,0,200,2],
-    "Gold Ingot" => [266,0,300,2],
-    "Diamond" => [264,0,500,2],
-    "Lapis" => [351,4,500,2]
+    "Iron Ingot" => [265,0,200,20],
+    "Gold Ingot" => [266,0,300,30],
+    "Diamond" => [264,0,500,30],
+    "Lapis" => [351,4,500,50]
   ];
 	
   public $Tools = [
@@ -186,7 +180,6 @@ public $Blocks = [
 		PacketPool::registerPacket(new ServerSettingsResponsePacket());
     $this->item = [$this->MobDrop, $this->Skulls, $this->Potions, $this->Mobs, $this->Raiding, $this->Farming, $this->Armor, $this->Tools, $this->Food, $this->Ores, $this->Blocks, $this->Miscellaneous];
   }
-
   public function sendMainShop(Player $player){
     $ui = new SimpleForm("§6Void§bFactions§cPE §dShop","       §aPurchase and Sell items Here!");
     foreach($this->item as $category){
@@ -203,7 +196,6 @@ public $Blocks = [
     $player->dataPacket($pk);
     return true;
   }
-
   public function sendShop(Player $player, $id){
     $ui = new SimpleForm("§6Void§bFactions§cPE §dShop","       §aPurchase and Sell items Here!");
     $ids = -1;
@@ -228,7 +220,6 @@ public $Blocks = [
     $player->dataPacket($pk);
     return true;
   }
-
   public function sendConfirm(Player $player, $id){
     $ids = -1;
     $idi = -1;
@@ -252,7 +243,6 @@ public $Blocks = [
         }
       }
     }
-
     $ui = new CustomForm($iname);
     $slider = new Slider("§dAmount ",1,500,0);
     $toggle = new Toggle("§5Selling");
@@ -267,7 +257,6 @@ public $Blocks = [
     $player->dataPacket($pk);
     return true;
   }
-
   public function sell(Player $player, $data, $amount){
     $ids = -1;
     $idi = -1;
@@ -307,7 +296,6 @@ public $Blocks = [
     }
     return true;
   }
-
   public function purchase(Player $player, $data, $amount){
     $ids = -1;
     $idi = -1;
@@ -343,7 +331,6 @@ public $Blocks = [
     }
     return true;
   }
-
   public function DataPacketReceiveEvent(DataPacketReceiveEvent $event){
     $packet = $event->getPacket();
     $player = $event->getPlayer();
@@ -375,7 +362,6 @@ public $Blocks = [
     }
     return true;
   }
-
   public function onCommand(CommandSender $player, Command $command, string $label, array $args) : bool{
     switch(strtolower($command)){
       case "shop":
@@ -383,5 +369,4 @@ public $Blocks = [
         return true;
     }
   }
-
 }
