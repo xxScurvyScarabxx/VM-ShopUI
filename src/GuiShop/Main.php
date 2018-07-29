@@ -1,5 +1,7 @@
 <?php
+
 namespace GuiShop;
+
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
@@ -15,7 +17,9 @@ use GuiShop\Modals\network\{GuiDataPickItemPacket, ModalFormRequestPacket, Modal
 use GuiShop\Modals\windows\{CustomForm, ModalWindow, SimpleForm};
 use pocketmine\command\{Command, CommandSender, ConsoleCommandSender, CommandExecutor};
 use onebone\economyapi\EconomyAPI;
+
 class Main extends PluginBase implements Listener {
+	
   public $shop;
   public $item;
   //documentation for setting up the items
@@ -34,9 +38,9 @@ public $Blocks = [
 	"Sand " => [12,0,15,2],
     "Sandstone " => [24,0,15,3],
 	"Nether Rack" => [87,0,15,2],
-    "Glass" => [20,0,50,5],
-    "Glowstone" => [89,0,100,10],
-    "Sea Lantern" => [169,0,100,10],
+    "Glass" => [20,0,50,3],
+    "Glowstone" => [89,0,100,5],
+    "Sea Lantern" => [169,0,100,5],
 	"Grass" => [2,0,20,3],
 	"Dirt" => [3,0,10,2],
     "Stone" => [1,0,20,3],
@@ -54,11 +58,11 @@ public $Blocks = [
 	
   public $Ores = [
     "ICON" => ["Ores",266,0],
-    "Coal" => [263,0,100,30],
-    "Iron Ingot" => [265,0,200,20],
+    "Coal" => [263,0,100,10],
+    "Iron Ingot" => [265,0,200,10],
     "Gold Ingot" => [266,0,300,30],
-    "Diamond" => [264,0,500,30],
-    "Lapis" => [351,4,500,50]
+    "Diamond" => [264,0,500,20],
+    "Lapis" => [351,4,500,20]
   ];
 	
   public $Tools = [
@@ -130,16 +134,16 @@ public $Blocks = [
 	
   public $Mobs = [
     "ICON" => ["Mobs",52,0],
-    "Blaze" => [52,43,50000,1000],
-    "Stray" => [52,46,50000,1000],
-    "Skeleton" => [52,34,50000,1000],
-    "Zombie" => [52,32,50000,1000],
-    "Husk" => [52,47,50000,1000],
-    "Zombie_Pigman" => [52,36,50000,1000],
-    "Creeper" => [52,33,50000,1000],
-    "Iron_Golem" => [52,20,50000,1000],
-    "Snow Golem" => [52,21,50000,1000],
-    "Mob Spawner" => [52,0,55000,1500]
+    "Blaze" => [52,43,50000,500],
+    "Stray" => [52,46,50000,500],
+    "Skeleton" => [52,34,50000,500],
+    "Zombie" => [52,32,50000,500],
+    "Husk" => [52,47,50000,500],
+    "Zombie_Pigman" => [52,36,50000,500],
+    "Creeper" => [52,33,50000,500],
+    "Iron_Golem" => [52,20,50000,500],
+    "Snow Golem" => [52,21,50000,500],
+    "Mob Spawner" => [52,0,55000,500]
   ];
 	
   public $Potions = [
