@@ -121,8 +121,6 @@ public $Blocks = [
 
   public $Miscellaneous = [
     "ICON" => ["Miscellaneous",368,0],
-	"PVP Elixir" => [373,101,35000,500],
-	"Raiding Elixir" => [373,100,10000,500],
 	"Furnace" => [61,0,20,10],
     "Crafting Table" => [58,0,20,10],
 	"Ender Chest " => [130,0,1000,500],
@@ -176,16 +174,6 @@ public $Blocks = [
     "Poison (SPLASH)" => [438,27,1000,100],
     "Weakness (SPLASH)" => [438,35,1000,100],
     "Slowness (SPLASH)" => [438,17,1000,100]
-  ];
-
-  public $Skulls = [
-    "ICON" => ["Skulls",397,0],
-    "Zombie Skull" => [397,2,500,50],
-    "Wither Skull" => [397,1,500,50],
-    "Skin Head" => [397,3,50,10],
-    "Creeper Skull" => [397,4,500,50],
-    "Dragon Skull" => [397,5,1000,60],
-    "Skeleton Skull" => [397,0,500,50]
   ];
 	
   public $MobDrop = [
