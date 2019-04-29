@@ -1,9 +1,9 @@
-name: GuiShop
+name: ChalixShop/OldVersion
 main: GuiShop\Main
-version: 1.0.0-BETA2
+version: 2.0Beta
 api: [3.0.0-ALPHA10, 3.0.0-ALPHA11]
 author: VMPE Developement Team
 description: ShopUI for servers!
 commands:
  shop:
-  description: Opens a shop UI
+  description: Opens a shop ui to buy and sell
