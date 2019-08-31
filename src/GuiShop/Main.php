@@ -169,8 +169,8 @@ public $Blocks = [
     "Skeleton Skull" => [397,0,500,10]
   ];
 	
-  public $MobDrop = [
-    "ICON" => ["MobDrop",369,0],
+  public $MobDrops = [
+    "ICON" => ["CrateKeys",369,0],
     "Blaze Rod" => [369,0,500,10],
     "Gold Nuggets" => [371,0,500,10],
     "Rotten Flesh" => [367,0,500,10],
